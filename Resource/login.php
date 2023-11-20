@@ -67,7 +67,7 @@ if (isset($_POST['login'])) {
 
     <div class="container">
         <div class="row my-5">
-            <div class="col-md-6 text-center login" style="background-image: url('img/bg/memphis-colorful.png');">
+            <div class="col-md-6 text-center login" style="background-image: url('img/MNU.jpg');">
                 <h4 class="fw-bold">Login | Admin</h4>
                 <!-- Error can't login -->
                 <?php if (isset($error)) : ?>

@@ -11,12 +11,12 @@ require 'function.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
+    <!-- Bootstrap --> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <!-- Font Google -->
+     <!-- Font Google -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <!-- Own CSS -->
+   <!-- Own CSS -->
     <link rel="stylesheet" href="css/login.css">
 
     <title>Login</title>
@@ -43,7 +43,7 @@ require 'function.php';
 
     <div class="container">
         <div class="row my-5">
-            <div class="col-md-6 text-center login" style="background-image: url('img/bg/memphis-colorful.png');">
+            <div class="col-md-6 text-center login" style="background-image: url('img/MNU.jpg');">
                 <h4 class="fw-bold">Register | Admin</h4>
                 
                 <?php if (isset($error)) : ?>
