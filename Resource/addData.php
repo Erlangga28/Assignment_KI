@@ -82,20 +82,20 @@ if (isset($_POST['simpan'])) {
             <div class="col-md">
                 <form action="" method="post" enctype="multipart/form-data">
                     <div class="mb-3">
-                        <label for="nim" class="form-label">NIK </label>
-                        <input type="number" class="form-control w-50" id="nis" placeholder="Masukkan NIM" min="1" name="nim" autocomplete="off" required>
+                        <label for="nik" class="form-label">NIK </label>
+                        <input type="number" class="form-control w-50" id="nik" placeholder="Masukkan NIK" min="1" name="nik" autocomplete="off" required>
                     </div>
                     <div class="mb-3">
                         <label for="nama" class="form-label">Nama Lengkap</label>
                         <input type="text" class="form-control form-control-md w-50" id="nama" placeholder="Masukkan Nama Lengkap" name="nama" autocomplete="off" required>
                     </div>
                     <div class="mb-3">
-                        <label for="kelas" class="form-label">Alamat</label>
-                        <input type="text" class="form-control w-50" id="kelas" placeholder="Masukkan Kelas" name="kelas" autocomplete="off" required>
+                        <label for="alamat" class="form-label">Alamat</label>
+                        <input type="text" class="form-control w-50" id="alamat" placeholder="Tambah alamat" name="alamat" autocomplete="off" required>
                     </div>
                     <div class="mb-3">
-                        <label for="jurusan" class="form-label">Gol.Darah</label>
-                        <input type="text" class="form-control w-50" id="jurusan" placeholder="Masukkan Jurusan" name="jurusan" autocomplete="off" required>
+                        <label for="gol.darah" class="form-label">Gol.Darah</label>
+                        <input type="text" class="form-control w-50" id="gol.darah" placeholder="Masukkan Gol.darah anda" name="gol.darah" autocomplete="off" required>
                     </div>
             
                     <a href="index.php" class="btn btn-secondary">Kembali</a>
