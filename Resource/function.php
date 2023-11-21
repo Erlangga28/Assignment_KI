@@ -29,10 +29,10 @@ function tambah($data)
     $nik = htmlspecialchars($data['nik']);
     $nama = htmlspecialchars($data['nama']);
     $alamat = htmlspecialchars($data['alamat']);
-    $gol_darah = htmlspecialchars($data['gol.darah']);
+    $gol_darah = htmlspecialchars($data['gol_darah']);
     
 
-    $sql = "INSERT INTO masyarakat(nik, nama, alamat, gol.darah) VALUES ('$nik','$nama','$alamat','$gol_darah')";
+    $sql = "INSERT INTO masyarakat(nik, nama, alamat, gol_darah) VALUES ('$nik','$nama','$alamat','$gol_darah')";
 
     mysqli_query($koneksi, $sql);
 
