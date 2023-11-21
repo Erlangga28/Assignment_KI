@@ -53,7 +53,7 @@ function ubah($data)
 {
     global $koneksi;
 
-    $nik = htmlspecialchars($data['nim']);
+    $nik = htmlspecialchars($data['nik']);
     $nama = htmlspecialchars($data['nama']);
     $alamat = htmlspecialchars($data['alamat']);
     $gol_darah = htmlspecialchars($data['gol.darah']);
