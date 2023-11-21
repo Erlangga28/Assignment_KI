@@ -2,6 +2,15 @@
 // Koneksi Database
 $koneksi = mysqli_connect("localhost", "root", "", "db_masyarakat");
 
+
+function isAdmin()
+{
+        if (isset($_SESSION['user']) && $_SESSION['user']['user_type'] == 'admin' ) {
+                return true;
+        }else{
+                return false;
+        }
+}
 // membuat fungsi query dalam bentuk array
 function query($query)
 {
@@ -20,6 +29,7 @@ function query($query)
 
     return $rows;
 }
+
 
 // Membuat fungsi tambah
 function tambah($data)

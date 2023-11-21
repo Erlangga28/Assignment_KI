@@ -26,6 +26,12 @@ if (isset($_POST['login'])) {
     $error = true;  
 }
 
+if(isset($_SESSION['admin'], $_SESSION['admin'])){ 
+    header('Location: index.php'); 
+    exit; 
+} 
+
+
 ?>
 
 <!DOCTYPE html>
