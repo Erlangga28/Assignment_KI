@@ -49,7 +49,7 @@ require 'function.php';
                 <?php if (isset($error)) : ?>
                     <?php echo '<script>alert("Username atau Password sudah digunakan!");</script>'; ?>
                 <?php endif; ?>
-                <form action="process_register.php" method="post">
+                <form action="process_regist.php" method="post">
                     <div class="form-group user">
                         <input type="text" class="form-control w-50" placeholder="Masukkan Username" name="username" autocomplete="off" required>
                     </div>
