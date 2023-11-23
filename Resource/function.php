@@ -5,7 +5,7 @@ $koneksi = mysqli_connect("localhost", "root", "", "db_masyarakat");
 
 function isAdmin()
 {
-        if (isset($_SESSION['username']) && $_SESSION['login']['user_type'] == 'admin' ) {
+        if (isset($_SESSION['index']) && $_SESSION['login']['user_type'] == 'admin' ) {
                 return true;
         }else{
                 return false;

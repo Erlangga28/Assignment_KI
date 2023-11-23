@@ -2,7 +2,7 @@
 session_start();
 // direct ke index.php
 if (isset($_SESSION['login'], $_SESSION['admin'])) {
-    header('location:index.php');
+    header('location:inde_user.php');
     exit;
 }
 
@@ -26,7 +26,7 @@ if (isset($_POST['login'])) {
     $error = true;  
 }
 
-if(isset($_POST['login'], $_SESSION['admin'])){ 
+if(isset($_SESSION['admin'])){ 
     header('Location: index.php'); 
     exit; 
 } 
