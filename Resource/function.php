@@ -66,10 +66,10 @@ function ubah($data)
     $nik = htmlspecialchars($data['nik']);
     $nama = htmlspecialchars($data['nama']);
     $alamat = htmlspecialchars($data['alamat']);
-    $gol_darah = htmlspecialchars($data['gol.darah']);
+    $gol_darah = htmlspecialchars($data['gol_darah']);
     
 
-    $sql = "UPDATE masyarakat SET nama = '$nama', alamat = '$alamat', gol.darah = '$gol_darah' WHERE nik = $nik";
+    $sql = "UPDATE masyarakat SET nama = '$nama', alamat = '$alamat', gol_darah = '$gol_darah' WHERE nik = $nik";
 
     mysqli_query($koneksi, $sql);
 
