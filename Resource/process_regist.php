@@ -13,3 +13,5 @@ if (empty($username) || empty($password)) {
     mysqli_query($koneksi, "INSERT INTO admin(username, password) VALUES ('$username', '$password')");
     header("location: index.php");
 }
+
+?>

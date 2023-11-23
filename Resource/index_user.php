@@ -11,9 +11,7 @@ require 'function.php';
 
 // Menampilkan semua data
 $people = query("SELECT * FROM masyarakat ORDER BY nik DESC");
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -133,9 +131,6 @@ $people = query("SELECT * FROM masyarakat ORDER BY nik DESC");
                                 <td>
                                     <button class="btn btn-success btn-sm text-white detail" data-id="<?= $row['nik']; ?>" style="font-weight: 600;"><i class="bi bi-info-circle-fill"></i>&nbsp;Detail</button> |
 
-                                    <a href="ubah.php?nik=<?= $row['nik']; ?>" class="btn btn-warning btn-sm" style="font-weight: 600;"><i class="bi bi-pencil-square"></i>&nbsp;Ubah</a> |
-
-                                    <a href="hapus.php?nik=<?= $row['nik']; ?>" class="btn btn-danger btn-sm" style="font-weight: 600;" onclick="return confirm('Apakah anda yakin ingin menghapus data <?= $row['nama']; ?> ?');"><i class="bi bi-trash-fill"></i>&nbsp;Hapus</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
@@ -191,7 +186,7 @@ $people = query("SELECT * FROM masyarakat ORDER BY nik DESC");
                     }
                 });
             });
-            
+            // Fungsi Detail
         });
     </script>
 </body>

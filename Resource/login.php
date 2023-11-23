@@ -1,7 +1,7 @@
 <?php
 session_start();
 // direct ke index.php
-if (isset($_SESSION['login'])) {
+if (isset($_SESSION['login'], $_SESSION['admin'])) {
     header('location:index.php');
     exit;
 }
@@ -19,18 +19,30 @@ if (isset($_POST['login'])) {
     if ($cek > 0) {
         $_SESSION['login'] = true;
 
-        header('location:index.php');
+        header('location:index_user.php');
         exit;
     }
  
     $error = true;  
 }
 
-if(isset($_SESSION['admin'], $_SESSION['admin'])){ 
+if(isset($_POST['login'], $_SESSION['admin'])){ 
     header('Location: index.php'); 
     exit; 
 } 
+    $username = $_POST['admin'];
+    $password = md5($_POST['admin']);
 
+    $result = mysqli_query($koneksi, "SELECT * FROM admin WHERE username = '$username'");
+
+    $cek = mysqli_num_rows($result);
+
+    if ($cek > 0) {
+        $_SESSION['admin'] = true;
+
+        header('location:index.php');
+        exit;
+}
 
 ?>
 
