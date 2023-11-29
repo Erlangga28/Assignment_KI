@@ -113,10 +113,6 @@ $people = query("SELECT * FROM masyarakat ORDER BY nik DESC");
                         <tr>
                             <th>No.</th>
                             <th>Nama</th>
-                            <th>NIK</th>
-                            <th>Alamat</th>
-                            <th>Gol.darah</th>
-                            <th>Keterangan</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -125,9 +121,6 @@ $people = query("SELECT * FROM masyarakat ORDER BY nik DESC");
                             <tr>
                                 <td><?= $no++; ?></td>
                                 <td><?= $row['nama']; ?></td>
-                                <td><?= $row['nik']; ?></td>
-                                <td><?= $row['alamat']; ?></td>
-                                <td><?= $row['gol_darah']; ?></td>
                                 <td>
                                     <button class="btn btn-success btn-sm text-white detail" data-id="<?= $row['nik']; ?>" style="font-weight: 600;"><i class="bi bi-info-circle-fill"></i>&nbsp;Detail</button> |
 
